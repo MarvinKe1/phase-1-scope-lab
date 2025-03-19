@@ -1,31 +1,27 @@
 // Write your solution in this file!
-// Declare a variable in global scope called customerName using var
+// Declare customerName in global scope and initialize to 'bob'
 var customerName = 'bob';
 
-// Write a function that accesses the global customerName and uppercases it
+// Function to uppercase customerName
 function upperCaseCustomerName() {
   customerName = customerName.toUpperCase();
 }
 
-// Write a function that declares a global variable bestCustomer
+// Function to declare bestCustomer in global scope
 function setBestCustomer() {
-  bestCustomer = 'not bob'; // This will implicitly declare bestCustomer in global scope
+  bestCustomer = 'not bob'; // Implicit global declaration
 }
 
-// Write a function that overwrites the global bestCustomer variable
+// Function to overwrite bestCustomer
 function overwriteBestCustomer() {
   bestCustomer = 'maybe bob';
 }
 
-// Declare a constant in global scope and try to change it
+// Declare leastFavoriteCustomer as a constant
 const leastFavoriteCustomer = 'Alice';
 
+// Function to attempt to reassign leastFavoriteCustomer
 function changeLeastFavoriteCustomer() {
-  // This will throw an error because you cannot reassign a constant
-  leastFavoriteCustomer = 'Bob';
+  leastFavoriteCustomer = 'Bob'; // This will throw an error
 }
-console.log(customerName); // Check initial value
-upperCaseCustomerName();
-console.log(customerName); // Check after uppercasing
-setBestCustomer();
-console.log(bestCustomer); // Check after setting bestCustomer
+np
