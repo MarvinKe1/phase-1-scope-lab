@@ -24,3 +24,8 @@ function changeLeastFavoriteCustomer() {
   // This will throw an error because you cannot reassign a constant
   leastFavoriteCustomer = 'Bob';
 }
+console.log(customerName); // Check initial value
+upperCaseCustomerName();
+console.log(customerName); // Check after uppercasing
+setBestCustomer();
+console.log(bestCustomer); // Check after setting bestCustomer
